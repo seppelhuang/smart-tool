@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: smart-tool
+server:
+  port: 80
