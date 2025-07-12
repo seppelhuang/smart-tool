@@ -31,7 +31,7 @@ public class SmartToolApplication implements CommandLineRunner {
         transformerService.transform(inputPath, outputPath);
         System.out.println("输出结果文件：" + outputPath);
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
            Thread.currentThread().interrupt();
         }
