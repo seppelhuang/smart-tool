@@ -33,17 +33,7 @@ public class SmartToolApplication implements CommandLineRunner {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-           Thread.currentThread().interrupt();
+            Thread.currentThread().interrupt();
         }
-    }
-    public static String getInputFile(String inputPath) {
-        File dir = new File(inputPath);
-        if(dir.isDirectory()){
-            File[] files = dir.listFiles();
-            assert files != null;
-            File file = files[0];
-            return file.getAbsolutePath();
-        }
-        return null;
     }
 }
